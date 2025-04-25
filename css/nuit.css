@@ -1,0 +1,145 @@
+/* Mode nuit avec le même style que le clair, mais adapté au thème sombre */
+body {
+    background-color: #121212; /* Fond sombre */
+    color: #e0e0e0; /* Texte clair */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e1e1e; /* Fond sombre pour l'en-tête */
+    color: #ffffff; /* Texte clair */
+    padding: 20px 0;
+    text-align: center;
+}
+
+section {
+    background-color: #1e1e1e; /* Fond sombre pour les sections */
+    color: #e0e0e0; /* Texte clair */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Ombre subtile */
+    padding: 20px;
+    margin: 20px;
+}
+
+footer {
+    background-color: #1e1e1e; /* Fond sombre */
+    color: #e0e0e0; /* Texte clair */
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #6a9fb5; /* Ligne claire en haut du footer */
+}
+
+footer a {
+    color: #64b5f6; /* Couleur des liens dans le footer */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #90caf9; /* Couleur des liens au survol */
+}
+
+.reseaux img {
+    width: 50px; /* Taille du logo Twitter */
+    height: auto; /* Maintient le ratio d'aspect */
+    margin-top: 10px;
+    float: right;
+}
+
+a {
+    color: #64b5f6; /* Couleur des liens */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #90caf9; /* Couleur des liens au survol */
+    
+}
+
+button {
+    background-color: #35424a; /* Fond sombre pour les boutons */
+    color: #ffffff; /* Texte clair */
+    border: none;
+    padding: 14px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #268fdf; /* Couleur au survol */
+}
+
+/* Styles pour les champs de saisie et les zones de texte */
+input, textarea {
+    background-color: #1e1e1e; /* Fond sombre pour les champs */
+    color: #e0e0e0; /* Texte clair */
+    border: 1px solid #6a9fb5; /* Bordure claire */
+    padding: 10px;
+    border-radius: 4px; /* Coins arrondis */
+    width: 100%; /* Champs de saisie prennent toute la largeur */
+    box-sizing: border-box; /* Inclut la bordure dans la largeur */
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #90caf9; /* Bordure plus claire au focus */
+}
+
+/* Styles pour le bouton du formulaire */
+button[type="submit"] {
+    background-color: #35424a; /* Fond sombre */
+    color: #ffffff; /* Texte clair */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #a4d7fe; /* Couleur au survol */
+}
+
+.gallery img {
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Ombre subtile pour les images */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* Zoom au survol */
+}
+
+.button {
+    background-color: #35424a; /* Fond sombre pour les boutons */
+    color: #ffffff; /* Texte clair */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.button:hover {
+    background-color: #268fdf; /* Couleur au survol */
+}
+
+.theme-button {
+    background-color: #35424a; /* Fond sombre */
+    color: #ffffff; /* Couleur de l'emoji */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px; /* Taille de l'emoji */
+    margin: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-button:hover {
+    background-color: #268fdf; /* Couleur au survol */
+}

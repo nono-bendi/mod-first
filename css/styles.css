@@ -1,0 +1,177 @@
+/* 
+Ce fichier CSS contient les styles pour le site web.
+Il définit la mise en page, les couleurs, les polices et d'autres aspects visuels des éléments HTML.
+*/
+
+/* Réinitialise certains styles par défaut du navigateur */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles du corps */
+body {
+    font-family: Arial, sans-serif; /* Définit une police moderne et épurée pour le site */
+    line-height: 1.6; /* Améliore la lisibilité en augmentant l'interligne */
+    background-color: #f4f4f4; /* Fond gris clair pour un aspect doux */
+    color: #333; /* Couleur de texte gris foncé pour un meilleur contraste */
+}
+
+/* Styles de l'en-tête */
+header {
+    background: #35424a; /* Fond sombre pour l'en-tête */
+    color: #ffffff; /* Couleur de texte blanche pour le contraste */
+    padding: 20px 0; /* Ajoute une marge intérieure à l'en-tête */
+    text-align: center; /* Centre le texte de l'en-tête */
+}
+
+/* Styles des sections */
+section {
+    padding: 20px; /* Ajoute une marge intérieure autour des sections */
+    margin: 20px; /* Ajoute une marge entre les sections */
+    background: #ffffff; /* Fond blanc pour les sections */
+    border-radius: 8px; /* Arrondit les coins des sections */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile pour la profondeur */
+}
+
+/* Styles des formulaires */
+form {
+    display: flex; /* Utilise flexbox pour la mise en page */
+    flex-direction: column; /* Empile les éléments du formulaire verticalement */
+}
+
+/* Styles des champs de saisie et des zones de texte */
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px; /* Ajoute une marge intérieure aux champs de saisie */
+    margin: 10px 0; /* Ajoute une marge entre les champs */
+    border: 1px solid #ccc; /* Bordure gris clair pour les champs de saisie */
+    border-radius: 4px; /* Arrondit les coins des champs de saisie */
+}
+
+/* Styles des boutons */
+button {
+    background: #35424a; /* Fond sombre pour les boutons */
+    color: #ffffff; /* Couleur de texte blanche pour les boutons */
+    border: none; /* Supprime la bordure par défaut */
+    padding: 25px; /* Ajoute une marge intérieure au bouton */
+    border-radius: 20px; /* Arrondit les coins du bouton */
+    cursor: pointer; /* Change le curseur en pointeur au survol */
+    margin: 10px;
+}
+
+/* Effet au survol des boutons */
+button:hover {
+    background: #268fdf; /* Change la couleur de fond au survol */
+}
+
+/* Styles du pied de page */
+footer {
+    text-align: center; /* Centre le texte du pied de page */
+    padding: 20px 0; /* Ajoute une marge intérieure au pied de page */
+    background: #35424a; /* Fond sombre pour le pied de page */
+    color: #ffffff; /* Couleur de texte blanche pour le contraste */
+    position: relative; /* Permet de positionner le pied de page */
+    bottom: 0; /* Colle le pied de page en bas */
+    width: 100%; /* Assure que le pied de page occupe toute la largeur */
+}
+
+.reseaux {
+    position: absolute; /* Positionne l'élément par rapport au footer */
+    bottom: 5px; /* Place l'élément à 10px du bas du footer */
+    left: 10px; /* Place l'élément à 10px du bord gauche */
+    width: 50px; /* Augmente la largeur du logo */
+    height: auto; /* Maintient le ratio d'aspect de l'image */
+}
+
+.reseaux img {
+    max-width: 100%; /* Assure que l'image occupe toute la largeur de son conteneur */
+    height: auto; /* Maintient le ratio d'aspect */
+}
+
+ul {
+    list-style-type: none; /* Supprime les puces de la liste */
+    padding: 30px; /* Supprime la marge intérieure de la liste */
+}
+
+/* Styles pour les liens de type bouton */
+.button {
+    display: inline-block;
+    padding: 20px;
+    background-color: #35424a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0px;
+}
+
+.button:hover {
+    background-color: #268fdf;
+} 
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centre les boutons horizontalement */
+    margin: 20px 0; /* Ajoute une marge autour du conteneur de boutons */
+}
+
+.gallery {
+    display: grid; /* Utilise CSS Grid */
+    grid-template-columns: repeat(3, 1fr); /* Définit 3 colonnes de largeur égale */
+    gap: 50px; /* Ajoute un espace entre les images */
+    margin: 20px; /* Ajoute une marge autour de la galerie */
+}
+
+.gallery img {
+    width: 100%; /* Les images occupent toute la largeur de leur conteneur */
+    height: 200px; /* Fixe une hauteur uniforme pour toutes les images */
+    object-fit: cover; /* Recadre l'image pour qu'elle remplisse le conteneur sans déformation */
+    border-radius: 8px; /* Arrondit les coins des images */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile */
+    transition: transform 0.3s ease; /* Ajoute une transition pour l'effet de zoom */
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* Applique un zoom de 10% au survol */
+}
+
+.theme-button {
+    background-color: #35424a;
+    color: #ffffff;
+    border: none;float: right;
+    padding: 10px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+     /* Positionne le bouton tout à droite */
+}
+
+.theme-button:hover {
+    background-color: #a8b2f3;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #f4f4f4;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

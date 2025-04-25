@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site HTML</title>
+    <!-- Lien vers le fichier CSS externe pour le style -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Lien vers le fichier JavaScript externe pour l'interactivité -->
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- Section principale de l'en-tête -->
+    <header>
+        <h1>Bienvenue sur Mon Site HTML</h1>
+        <p>Votre destination pour apprendre dev.</p>
+    </header>
+
+    <!-- Menu de navigation pour accéder facilement aux différentes sections -->
+    <button id="menuButton">Menu</button>
+    <a href="FAQ.html" id="menuButton2" class="button">FAQ</a>
+    <a href="portfolio.html" class="button">Photo</a>
+    <a href="tableau.html" class="button">Tarif</a>
+    <button id="toggleTheme" class="theme-button">🌙</button>
+    
+    <nav id="menuNav" style="display: none;">
+        <ul>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <script>
+        const menuButton = document.getElementById('menuButton');
+        const menuNav = document.getElementById('menuNav');
+
+        menuButton.addEventListener('click', () => {
+            if (menuNav.style.display === 'none') {
+                menuNav.style.display = 'block';
+            } else {
+                menuNav.style.display = 'none';
+            }
+        });
+    </script>
+
+    <!-- Zone principale de contenu -->
+    <main>
+        <section id="about">
+            <h2>À propos de nous</h2>
+            <p>Nous sommes une équipe passionnée par le développement web, dédiée à fournir des solutions innovantes et adaptées à vos besoins.</p>
+            <br> <img src="images/team.jpg" alt="Notre équipe" style="width:40%; border-radius:8px;">
+        </section>
+
+        <section id="services">
+            <h2>Nos Services</h2>
+            <ul>
+                <li>Développement Web</li>
+                <li>Optimisation SEO</li>
+                <li>Création de contenu</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contactez-nous</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Votre nom" required>
+                <input type="email" name="email" placeholder="Votre email" required>
+                <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+                <button type="submit">Envoyer le message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Section du pied de page avec les informations de copyright -->
+    <footer>
+        <p>&copy; Nono.</p>
+        <div class="reseaux"> <a href="https://x.com/?lang=fr">
+            <img src="images/new-twitter-x-logo-twitter-icon-x-social-media-icon-free-png.webp" alt="Twitter">
+
+        </a>
+    </div>
+    </footer>
+</body>
+</html>
